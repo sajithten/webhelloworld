@@ -1,59 +1,162 @@
-
-	<a href="https://front.codes/" class="logo" target="_blank">
-		<img src="https://assets.codepen.io/1462889/fcy.png" alt="">
-	</a>
-
-	<div class="section">
-		<div class="container">
-			<div class="row full-height justify-content-center">
-				<div class="col-12 text-center align-self-center py-5">
-					<div class="section pb-5 pt-5 pt-sm-2 text-center">
-						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
-			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-			          	<label for="reg-log"></label>
-						<div class="card-3d-wrap mx-auto">
-							<div class="card-3d-wrapper">
-								<div class="card-front">
-									<div class="center-wrap">
-										<div class="section text-center">
-											<h4 class="mb-4 pb-3">Log In</h4>
-											<div class="form-group">
-												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-												<i class="input-icon uil uil-at"></i>
-											</div>	
-											<div class="form-group mt-2">
-												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-												<i class="input-icon uil uil-lock-alt"></i>
-											</div>
-											<a href="#" class="btn mt-4">submit</a>
-                            				<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
-				      					</div>
-			      					</div>
-			      				</div>
-								<div class="card-back">
-									<div class="center-wrap">
-										<div class="section text-center">
-											<h4 class="mb-4 pb-3">Sign Up</h4>
-											<div class="form-group">
-												<input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
-												<i class="input-icon uil uil-user"></i>
-											</div>	
-											<div class="form-group mt-2">
-												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-												<i class="input-icon uil uil-at"></i>
-											</div>	
-											<div class="form-group mt-2">
-												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-												<i class="input-icon uil uil-lock-alt"></i>
-											</div>
-											<a href="#" class="btn mt-4">submit</a>
-				      					</div>
-			      					</div>
-			      				</div>
-			      			</div>
-			      		</div>
-			      	</div>
-		      	</div>
-	      	</div>
-	    </div>
-	</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Educational registration form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #eee;
+      }
+      body {
+      background: url("/uploads/media/default/0001/01/b5edc1bad4dc8c20291c8394527cb2c5b43ee13c.jpeg") no-repeat center;
+      background-size: cover;
+      }
+      h1, h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      }
+      h2 {
+      margin: 0 0 0 8px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.5); 
+      }
+      .left-part, form {
+      padding: 25px;
+      }
+      .left-part {
+      text-align: center;
+      }
+      .fa-graduation-cap {
+      font-size: 72px;
+      }
+      form {
+      background: rgba(0, 0, 0, 0.7); 
+      }
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      }
+      .checkbox a {
+      color: #26a9e0;
+      }
+      .checkbox a:hover {
+      color: #85d6de;
+      }
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: #26a9e0; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+      }
+      .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+      }
+      button {
+      width: 100%;
+      }
+      button:hover, .btn-item:hover {
+      background: #85d6de;
+      }
+      @media (min-width: 568px) {
+      html, body {
+      height: 100%;
+      }
+      .main-block {
+      flex-direction: row;
+      height: calc(100% - 50px);
+      }
+      .left-part, form {
+      flex: 1;
+      height: auto;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>Register to our courses</h1>
+        <p>W3docs provides free learning materials for programming languages like HTML, CSS, Java Script, PHP etc.</p>
+        <div class="btn-group">
+          <a class="btn-item" href="https://www.w3docs.com/learn-html.html">Learn HTML</a>
+          <a class="btn-item" href="https://www.w3docs.com/quiz/#">Select Quiz</a>
+        </div>
+      </div>
+      <form action="/">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>Register here</h2>
+        </div>
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Full name">
+          <input type="text" name="name" placeholder="Email">
+          <input type="text" name="name" placeholder="Phone number">
+          <input type="password" name="name" placeholder="Password">
+          <select>
+            <option value="course-type" selected>Course type*</option>
+            <option value="short-courses">Short courses</option>
+            <option value="featured-courses">Featured courses</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="diploma">Diploma</option>
+            <option value="certificate">Certificate</option>
+            <option value="masters-degree">Masters degree</option>
+            <option value="postgraduate">Postgraduate</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox"><span>I agree to the <a href="https://www.w3docs.com/privacy-policy">Privacy Poalicy for W3Docs.</a></span>
+        </div>
+        <button type="submit" href="/">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
