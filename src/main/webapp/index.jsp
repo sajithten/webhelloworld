@@ -1,92 +1,59 @@
-<!DOCTYPE html>
-<html>
-  <title>Simple Sign up from</title>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <style>
-      html, body {
-      display: flex;
-      justify-content: center;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 15px;
-      }
-      form {
-      border: 5px solid #f1f1f1;
-      }
-      input[type=text], input[type=password] {
-      width: 100%;
-      padding: 16px 8px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      }
-      .icon {
-      font-size: 110px;
-      display: flex;
-      justify-content: center;
-      color: #4286f4;
-      }
-      button {
-      background-color: #4286f4;
-      color: white;
-      padding: 14px 0;
-      margin: 10px 0;
-      border: none;
-      cursor: grab;
-      width: 48%;
-      }
-      h1 {
-      text-align:center;
-      fone-size:18;
-      }
-      button:hover {
-      opacity: 0.8;
-      }
-      .formcontainer {
-      text-align: center;
-      margin: 24px 50px 12px;
-      }
-      .container {
-      padding: 16px 0;
-      text-align:left;
-      }
-      span.psw {
-      float: right;
-      padding-top: 0;
-      padding-right: 15px;
-      }
-      /* Change styles for span on extra small screens */
-      @media screen and (max-width: 300px) {
-      span.psw {
-      display: block;
-      float: none;
-      }
-    </style>
-  </head>
-  <body>
-    <form action="/action_page.php">
-      <h1>SIGN UP</h1>
-      <div class="icon">
-        <i class="fas fa-user-circle"></i>
-      </div>
-      <div class="formcontainer">
-      <div class="container">
-        <label for="uname"><strong>Username</strong></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-        <label for="mail"><strong>E-mail</strong></label>
-        <input type="text" placeholder="Enter E-mail" name="mail" required>
-        <label for="psw"><strong>Password</strong></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-      </div>
-      <button type="submit"><strong>SIGN UP</strong></button>
-      <div class="container" style="background-color: #eee">
-        <label style="padding-left: 15px">
-        <input type="checkbox"  checked="checked" name="remember"> Remember me
-        </label>
-        <span class="psw"><a href="#">Forgot password?</a></span>
-      </div>
-    </form>
-  </body>
-</html>
+
+	<a href="https://front.codes/" class="logo" target="_blank">
+		<img src="https://assets.codepen.io/1462889/fcy.png" alt="">
+	</a>
+
+	<div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Log In</h4>
+											<div class="form-group">
+												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<a href="#" class="btn mt-4">submit</a>
+                            				<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Sign Up</h4>
+											<div class="form-group">
+												<input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
+												<i class="input-icon uil uil-user"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<a href="#" class="btn mt-4">submit</a>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
